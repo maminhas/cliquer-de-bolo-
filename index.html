@@ -43,7 +43,6 @@
 
         <div>
         <h1>confeitaria</h1>
-        <input type="text" id="novo-nome" placeholder="Novo nome da confeitaria"> <button onclick="trocarNome()">Trocar nome</button>
         <p class="a1">bolo de baunilha <br>
             <img class="bolo1" src="img/bolo1 258px.png" alt="bolo baunilha" onclick="incrementa()"></p>
             <p id="numero">0</p>
@@ -65,17 +64,6 @@
 
                 render();
 
-                function trocarNome() {
-                    const input = document.getElementById("novo-nome");
-                    const titulo = document.getElementById("nome-loja");
-
-                    const novoNome = input.value.trim();
-
-                    if (novoNome !== "") {
-                    titulo.innerText = novoNome;
-                    input.value = "";
-                    } 
-                }
             </script>
         </body>
 </html>
