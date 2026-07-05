@@ -40,6 +40,17 @@
                 box-sizing: border-box;
                 width: 400px;
             }
+            .conjunto {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 30px;
+                min-height: 100vh;
+            }
+            .upgrades {
+                margin-top: 30px; 
+            }
+            
 
 
 
@@ -48,15 +59,18 @@
     </head>
     <body>
 
+    <div class="conjunto">
+        <div class="upgrades">
+            <button>upgrade 1</button>
+        </div>
+
         <div class="boloMeio">
         <h1>confeitaria</h1>
         <p class="a1">bolo de baunilha <br>
             <img class="bolo1" src="img/bolo1 258px.png" alt="bolo baunilha" onclick="incrementa()"></p>
             <p id="numero">0</p>
         </div>
-        <section>
-            <button>upgrade 1</button>
-        </section>
+    </div>        
 
 
             <script>
