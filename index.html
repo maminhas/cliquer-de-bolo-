@@ -10,7 +10,9 @@
             img.bolo1 {
                 display: flex;
                 width: 200px;
-                
+                background: #e1b667;
+                padding: 15px;
+                border-radius: 60px;
             }
             body {
                 min-height: 100vh;
@@ -20,13 +22,17 @@
             }
             p#numero {
                 font-size: 100px;
+                background: #e1b667; 
+                padding: 15px;
+                border-radius: 60px;
             }
             p.a1 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            div {
+            div.boloMeio {
+                background-image: url(img/fundo\ bolo.png);
                 place-items: center;
                 border: 5px solid black;
                 min-height: 100vh;
@@ -42,12 +48,15 @@
     </head>
     <body>
 
-        <div>
+        <div class="boloMeio">
         <h1>confeitaria</h1>
         <p class="a1">bolo de baunilha <br>
             <img class="bolo1" src="img/bolo1 258px.png" alt="bolo baunilha" onclick="incrementa()"></p>
             <p id="numero">0</p>
         </div>
+        <section>
+            <button>upgrade 1</button>
+        </section>
 
 
             <script>
