@@ -6,6 +6,7 @@
 
             * {
                margin: 0; 
+               box-sizing: border-box;
             }
             img.bolo1 {
                 display: flex;
@@ -39,32 +40,51 @@
             }
             .conjunto {
                 display: flex;
-                
                 gap: 30px;
-                min-height: 100vh;
             }
             .upgrades {
                 background-image: url(img/fundo\ upgrade.png);
-                min-height: 100vh;
                 padding: 10px;
                 border: solid black;
+                display: flex;
             }
             button {
-                width: 700px;
-                padding: 20px;
+                width: 100px;
+                padding: 10px;
+                height: 50px;
+            }
+            .botão1 {
+                place-items: center;
+                display: flex;
+                background: #888;
+                height: 50px;
+                padding: 30px;
+                gap: 25px;
+                border: solid black 2px;
+            }
+            .custbut {
+                background: #666;
+                padding: 5px;
+                place-items: center;
+                display: flex;
+                gap: 40px;
             }
             
-
-
-
-
         </style>
     </head>
     <body>
 
     <div class="conjunto">
         <div class="upgrades">
-            <button>upgrade 1</button>
+            <div class="botão1">
+                <p>Colher descartável</p>
+                <br>
+                <div class="custbut">
+                    <p class="custo">custo:100</p>
+                    <button class=" button">comprar</button>
+                </div>
+                
+            </div>
         </div>
 
         <div class="boloMeio">
